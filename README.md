@@ -21,6 +21,40 @@
 
 ---
 
+## 🎯 Objective
+
+Make learning SQL **personal, engaging, and grounded in real execution** — take a learner
+from their first `SELECT` all the way to window functions and query optimization, practicing
+on their **own data**, with an AI tutor and a game world that make them _want_ to keep going.
+
+## ❓ Why is this needed?
+
+Most people learn SQL against generic, impersonal datasets (employees, northwind, sample
+e-commerce) on platforms like SQLZoo or LeetCode. Two problems fall out of that:
+
+- **It's disconnected and dry.** You're querying data you don't care about, so motivation
+  drops and drop-off is high — SQL practice feels like a chore, not a game.
+- **Feedback is shallow.** Most tools give a bare pass/fail. They don't show you _why_ a
+  query is slow, whether a faster rewrite exists, or how your query actually executed — the
+  things that separate "knows syntax" from "writes good SQL."
+
+And there's a gap nobody fills: the jump from toy exercises to **querying your own real,
+messy data** is exactly where beginners get stuck.
+
+## 🧩 What does it solve?
+
+- **Personal data, not toy data** — upload any CSV/Excel and the whole curriculum is
+  generated from _your_ schema, so every level is relevant to you.
+- **Motivation through play** — a pixel-art platformer with XP, badges, streaks, bosses and
+  level unlocking turns practice into progression.
+- **Real, grounded feedback** — every query is actually executed in a sandboxed DuckDB
+  engine: real results, real runtimes, real `EXPLAIN` plans, and optimization advice that's
+  _verified by running the rewrite_ — never guessed by an AI.
+- **Guidance, not just grading** — an AI tutor gives Socratic hints, teaches concepts, and
+  explains your query line-by-line.
+- **Structured progression** — difficulty ramps from basic `SELECT` to JOINs, subqueries,
+  CTEs, and window functions, with each level gated behind the last.
+
 ## 🎮 What is SQLQuest?
 
 **SQLQuest** turns any CSV or Excel file you upload into a **side-scrolling pixel-art
