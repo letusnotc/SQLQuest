@@ -1,0 +1,118 @@
+# ==============================================================================
+# SQLQuest — root .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 🔒 Secrets & environment (NEVER commit — these hold the DB password & API keys)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+secrets.*
+
+# ------------------------------------------------------------------------------
+# 🐍 Python / backend (FastAPI, uv)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+build/
+dist/
+wheels/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# uv / pip caches (keep uv.lock and pyproject.toml tracked!)
+.uv/
+.cache/
+pip-log.txt
+
+# Test / type / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ------------------------------------------------------------------------------
+# 🦆 DuckDB — per-dataset sandbox files (regenerated from uploads)
+# ------------------------------------------------------------------------------
+duckdb_data/
+*.duckdb
+*.duckdb.wal
+*.db.wal
+
+# ------------------------------------------------------------------------------
+# ▲ Node / Next.js / frontend
+# ------------------------------------------------------------------------------
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/versions
+
+# Next.js build output
+.next/
+out/
+build/
+.turbo/
+
+# Next generated types / build info
+next-env.d.ts
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# Vercel
+.vercel/
+
+# ------------------------------------------------------------------------------
+# 🪵 Logs & debug output
+# ------------------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# 💻 OS files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+
+# ------------------------------------------------------------------------------
+# 🛠️ Editors & IDEs
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
